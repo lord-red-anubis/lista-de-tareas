@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .nm{
+            text-transform: uppercase;
+        }
+    </style>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/007/696/364/non_2x/man-hand-holding-pen-and-writing-down-goals-to-achieve-in-notebook-checking-to-do-list-top-view-effective-personal-planning-and-organization-design-vector.jpg" type="image/x-icon">
+    <title>Producto integrador</title>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="containerP text-center">
+            <img src="https://cdn-610f9e01c1ac181114e17676.closte.com/wp-content/uploads/2019/01/UDG-Virtual.png"
+                alt="udgvirtual">
+            <h2 class="nm">miguel angel perez.</h2>
+            <h2>Desarrollo para front end</h2>
+            <h2>Producto integrador. Aplicación Web con JavaScript</h2>
+        </div>
+
+        <h1 class="mt-5 nm">
+            <i class="fas fa-tasks"></i> Lista de Tareas
+        </h1>
+
+
+        <form id="task-form" class="mt-3">
+            <div class="mb-3">
+                <label for="task-title" class="form-label">Titulo:</label>
+                <input type="text" class="form-control" id="task-title" placeholder="Tarea">
+            </div>
+            <div class="mb-3">
+                <label for="task-description" class="form-label">Descripcion:</label>
+                <textarea class="form-control" id="task-description" rows="3" placeholder="Descripcion"></textarea>
+            </div>
+            <button id="btn-task-save" class="btn btn-primary">Guardar</button>
+        </form>
+
+        <div id="tasks-container" class="mt-4"></div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
